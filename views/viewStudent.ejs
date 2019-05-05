@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="IIIT Allahabad Campus Course Portal">
+    <meta name="keywords" content="student, faculty, courses , registration">
+    <meta name="author" content="Akshay Gupta">
+    <title>IIIT Campus Course Portal | Welcome</title>
+    <style type="text/css">
+/* Naman code for tab instead of links */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  display: none;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tablinks {
+            color: rgb(0,0,200);
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Ends here */
+
+
+
+      body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#244f96;
+  border:0;
+  padding-left: 10px;
+  padding-right:10px;
+  color:#ffffff;
+}
+.button_2{
+ height:38px;
+  background:#244f96;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+  border-radius: 8%; 
+  margin-top:1rem;
+  margin-right:1rem;
+}
+
+.dark{
+  padding:15px;
+  background:#FF5733;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:#FF5733;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+header .tata{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 35px 0 30px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#244f96;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('../img/showcase.jpg') no-repeat 0 -400px;
+  text-align:center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#244f96;
+  text-align: center;
+}
+a{
+  color:white;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+  .button_1,.button_2{
+    margin:auto;
+  }
+}
+.tata{
+      background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+.tata:hover{
+  background-color:teal;
+}
+.tata.active{
+  background-color:#244f96;
+}
+
+    </style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">IIIT</span> Campus Course Portal</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><button class="tablinks tata" onclick="openCity(event, 'Profile')">Profile</button></li>
+            <li><button class="tablinks tata" onclick="openCity(event, 'Courses Enrolled')">Courses Enrolled</button></li>
+            <li><button class="tablinks tata" onclick="openCity(event, 'Add Courses')">Add Courses</button></li>
+            <li><button  class="tablinks tata" onclick="openCity(event, 'Discussion Forum')">Discussion Forum</button></li>
+            <li><button type="submit" class="button_1"><a href="/logout">Log Out</a></button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main">
+      <div id="Profile" class="tabcontent">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">Welcome <%= user[0].name %></h1>
+        
+            <ul id="services">
+              <li>
+                <strong>Enrollment ID: </strong> <%= user[0].Enrollment %>
+                <br>
+                <strong>Email Address: </strong> <%= user[0].Email_Address %>
+                <br>
+                <strong>User Name: </strong><%= user[0].Name %>
+                <br>
+                <strong>Department: </strong><%= user[0].Department %>
+                <br>
+                <strong>Gender: </strong><%= user[0].gender %>
+                <br>
+              </li>
+            </ul>
+        </article>
+      </div>
+
+      </div>
+      <div id="Courses Enrolled" class="tabcontent">
+        
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">Courses enrolled</h1>
+          <ul id="services">
+            <% for(var i=0; i < sql.length; i++) { %>
+            <li>
+              <h3><%= sql[i].Name %></h3>
+              <p><%= sql[i].Description %></p>
+              <p><strong><%= sql[i].CourseCode %></strong></p>
+              <p><button type="submit" class="button_2" name='<%= sql[i].CourseCode %>' ><a href="/quiz/<%= sql[i].CourseCode %>">Take Quiz</a></button>  <button type="submit" class="button_2" name='<%= sql[i].CourseCode %>' onclick="deleteEntry(this)" >Delete Course</button></p>
+            </li>
+            <% } %>
+            
+          </ul>
+        </article>
+      </div>
+      </div>
+      <div id="Add Courses" class = "tabcontent">
+        
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">Courses to enroll</h1>
+          <ul id="services">
+            <% for(var i=0; i < info.length; i++) { %>
+            <li>
+              <h3><%= info[i].Name %></h3>
+              <p><%= info[i].Description %></p>
+              <p><%= info[i].CourseCode %></p>
+              <p><button type="submit" class="button_2" name='<%= info[i].CourseCode %>' id="EnrollButton" onclick="EnrollCourse(this)">Enroll Now</button></p>
+            </li>
+            <% } %>
+          </ul>
+        </article>
+      </div>
+    </div>
+    <div id ="Discussion Forum" class = "tabcontent">
+     <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">Teacher and Student discussion forum</h1>
+          <ul id="services">
+            
+              <form method="POST" action="/addtoChat">
+              <input type="text" placeholder="Enter Your Message" class="formMessage" style="width:60.9%;height:2rem;border:none;" name="messageForm">
+               <button type="submit" class="button_2" onclick="PostMessage(this)">Submit</button>
+          </form>
+          <% for(var i =form.length-1;i>=0; i--){ %>
+            <li>
+              <h3><%= form[i].Code %></h3>
+              <p><%= form[i].message %></p>
+            </li>
+            <% } %>
+          </ul>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <p>IIIT Allahabad Campus Course Portal , Copyright &copy; 2019 | Created by Naman Deept and Akshay Gupta</p>
+    </footer>
+    <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+function EnrollCourse(button){
+  $.ajax({
+    url:"/addCourse", // The localhost url info to be provided here....
+    type:"POST",
+    data:{courseID: button.name},//to be sent to the server
+    success: function(returned){
+      console.log(returned);
+    },
+    error:function(){
+      console.log("Couldn't load data or server error");
+    }
+  });
+  window.location.reload();
+}
+
+function deleteEntry(button){
+  $.ajax({
+    url:"/deleteCourseStudent", 
+    type:"POST",
+    data:{courseID: button.name},
+    success: function(returned){
+      console.log(returned);
+    },
+    error: function(){
+      console.log("Couldn't load data or server problem");
+    }
+  });
+  window.location.reload();
+}
+
+function takeQuiz(button){
+  $.ajax({
+    url: "/quizzingApp",
+    type: "POST",
+    data:{courseID: button.name},
+    success: function(returned){
+      console.log(returned);
+    },
+    error: function(){
+      console.log("Data error couldn't get database");
+    }
+  });
+}
+
+function postMessage(button){
+  window.location.reload();
+}
+
+</script>
+
+</body>
+</html>

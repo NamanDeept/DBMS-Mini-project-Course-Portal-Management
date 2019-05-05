@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link href="assets/style.css" type="text/css" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        type="text/css" rel="stylesheet" />
+        
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js" ></script>
+    </head>
+    <body>
+        <div class="row">
+            <h1>Register as Student</h1>
+            <form method="POST" action="/addStudent">
+                <div class="form-group">
+
+                    Enrollment Number: <input type="text" class="form-control"  id="Enrollment" name="Enrollment" /><br />
+                    Name: <input type="text" class="form-control"  id="Name" name="Name" /><br />
+                    Password: <input type="password" name="pass" id="passID"/> <br />
+                
+                    <button type="submit" class="btn btn-primary btn-block" name="Submit" value="Submit" />
+            </div>
+            </form>
+        </div>
+        <div class="row">
+            <h1>Register as a Teacher</h1>
+            <form method="POST" action="/addFaculty">
+                <div class="form-group">
+
+                    Teacher ID: <input type="text" class="form-control"  id="TA_id" name="facultyId" /><br />
+                    Name: <input type="text" class="form-control"  id="Name" name="facultyName" /><br />
+                    Password: <input type="password" name="facultyPass" id="passID"/> <br />
+                
+                    <button type="submit" class="btn btn-primary btn-block" value="Submit" />
+            </div>
+            </form>
+        </div>
+    </body>
+</html>

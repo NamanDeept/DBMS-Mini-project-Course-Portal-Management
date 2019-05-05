@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Student Registration Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="registerpage/css/registerStudent.css">
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+      <div class="inner">
+        <div class="image-holder">
+          <div class="logo" style="height:15rem;width:13.5rem;margin-left:3rem" alt=""></div>
+          <br><br>
+          <h2 style="font-family:sans-serif;text-align:center;">
+            IIIT-ALLAHABAD
+          </h2> 
+        </div>
+        <form action="/addStudent" method="POST">
+          <h3>Student Registration Form</h3>
+          <div class="form-wrapper">
+            <input type="text" placeholder="Full Name" class="form-control" name="Name" id="nm">
+            <!--input type="text" placeholder="Last Name" class="form-control" -->
+          </div>
+          <div class="form-wrapper">
+            <input type="text" placeholder="Enrollment Id" class="form-control" name="Enrollment" id="er">
+            <i class="zmdi zmdi-enrollmentId"></i>
+          </div>
+          <div class="form-wrapper">
+            <input type="text" placeholder="Email Address" class="form-control" name="EmailStudent" id="eadd">
+            <i class="zmdi zmdi-email"></i>
+          </div>
+          <div class="form-wrapper">
+            <input type="text" placeholder="Department" class="form-control" name="dept" id="dept">
+            <i class="zmdi zmdi-department"></i>
+          </div>
+          <div class="form-wrapper">
+             <input type="text" placeholder="Gender" class="form-control" name="gender" id="gen">
+            <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+          </div>
+          <div class="form-wrapper">
+            <input type="password" placeholder="Password" class="form-control" name="pass" id="passw">
+            <i class="zmdi zmdi-lock"></i>
+          </div>
+          <button id="myBtn" type="submit">Register
+            <i class="zmdi zmdi-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
