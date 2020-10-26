@@ -5,8 +5,6 @@ const bodyParser = require('body-parser');
 const session =    require('express-session');
 var path =         require('path');
 var db =           require('./database');
-//var popup =        require('popup');
-//import alert from 'alert-node';
 
 app.set("view engine","ejs");
 
@@ -25,14 +23,14 @@ app.use(bodyParser.json());
 
 
 app.post("/addStudent",function(req,res){
-	var name =         req.body.Name;
-    var enrollment =   req.body.Enrollment;
-    var password =     req.body.pass;
-    var email =        req.body.EmailStudent;
-    var department =   req.body.dept;
-    var gender =       req.body.gender;
-	var sql =          "Insert into Student values('"+name+"','"+enrollment+"','"+email+"','"+department+"','"+gender+"','"+password+"');";
-	db.query(sql,function(err,result){
+    	var name =         req.body.Name;
+    	var enrollment =   req.body.Enrollment;
+    	var password =     req.body.pass;
+    	var email =        req.body.EmailStudent;
+    	var department =   req.body.dept;
+    	var gender =       req.body.gender;
+    	var sql =          "Insert into Student values('"+name+"','"+enrollment+"','"+email+"','"+department+"','"+gender+"','"+password+"');";
+    	db.query(sql,function(err,result){
 		if(err){
 			console.log("Unable to append to the database");
 		}
